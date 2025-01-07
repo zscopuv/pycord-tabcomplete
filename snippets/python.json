@@ -1,0 +1,82 @@
+{
+    "Replace client.init with bot initialization code": {
+      "prefix": "new.client",
+      "body": [
+        "import discord",
+        "from discord.ext import commands",
+        "from discord.ui import Button, View",
+        "",
+        "class Client(commands.Bot):",
+        "    def __init__(self):",
+        "        super().__init__(intents=discord.Intents.all())",
+        "    ",
+        "    async def on_ready(self):",
+        "        print(f\"Connection Initialized, logged in as: {this.user}.\")",
+        "",
+        "client = Client()",
+        "",
+        "",
+        "",
+        "client.run(\"\")"
+      ],
+      "description": "Replace client.init with a full Discord bot code"
+    },
+    "Generate new slash command structure": {
+      "prefix": "new.slashCommand",
+      "body": [
+        "@client.slash_command(name=\"\", description=\"\")",
+        "async def     (ctx:discord.ApplicationContext):",
+        "    "
+      ],
+      "description": "Generate new slash command structure"
+    },
+    "Create a new discord embed": {
+        "prefix": "new.embed",
+        "body": [
+          "embed = discord.Embed(title = \"\", description = \"\", color = 0xFFFFFF)",
+          ""
+        ],
+        "description": "Create a new discord embed"
+      },
+      "Add a field to the embed": {
+        "prefix": "new.embedField",
+        "body": [
+          "embed.add_field(name=\"\", value=\"\", inline=False)",
+          ""
+        ],
+        "description": "Add a field to the embed"
+      },
+      "Add an author to the embed": {
+        "prefix": "new.embedAuthor",
+        "body": [
+          "embed.set_author(name=\"\", url=\"\")",
+          ""
+        ],
+        "description": "Add an author to the embed"
+      },
+      "Add an image to the embed": {
+        "prefix": "new.embedImage",
+        "body": [
+          "embed.set_image(url=\"\")",
+          ""
+        ],
+        "description": "Add an image to the embed"
+      }, 
+      "Add a footer to the embed": {
+        "prefix": "new.embedFooter",
+        "body": [
+          "embed.set_footer(text=\"\", icon_url=\"\")",
+          ""
+        ],
+        "description": "Add a footer to the embed"
+      },
+      "Add an thumbnail to the embed": {
+        "prefix": "new.embedThumbnail",
+        "body": [
+          "embed.set_thumbnail(url=\"\")",
+          ""
+        ],
+        "description": "Add an thumbnail to the embed"
+      }
+  }
+  

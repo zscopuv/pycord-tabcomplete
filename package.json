@@ -1,0 +1,17 @@
+{
+  "name": "pycord-tabcomplete",
+  "displayName": "pycord-tabcomplete",
+  "description": "Structure builder for faster discord bot development.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/python.json"
+      }
+    ]
+  }
+}
