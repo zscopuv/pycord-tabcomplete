@@ -1,5 +1,5 @@
 {
-    "Replace client.init with bot initialization code": {
+    "Generate bot initialization code": {
       "prefix": "new.client",
       "body": [
         "import discord",
@@ -19,7 +19,7 @@
         "",
         "client.run(\"\")"
       ],
-      "description": "Replace client.init with a full Discord bot code"
+      "description": "Generate bot initialization code"
     },
     "Generate new slash command structure": {
       "prefix": "new.slashCommand",
